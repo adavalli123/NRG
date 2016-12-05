@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		6EC75B0B1DF3619B00DC4D53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B0A1DF3619B00DC4D53 /* AppDelegate.swift */; };
-		6EC75B0D1DF3619B00DC4D53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B0C1DF3619B00DC4D53 /* ViewController.swift */; };
+		6EC75B0D1DF3619B00DC4D53 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B0C1DF3619B00DC4D53 /* LoginViewController.swift */; };
 		6EC75B101DF3619B00DC4D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75B0E1DF3619B00DC4D53 /* Main.storyboard */; };
 		6EC75B121DF3619B00DC4D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75B111DF3619B00DC4D53 /* Assets.xcassets */; };
 		6EC75B151DF3619B00DC4D53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75B131DF3619B00DC4D53 /* LaunchScreen.storyboard */; };
+		6EC75B1D1DF48D0900DC4D53 /* GoogleFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B1C1DF48D0900DC4D53 /* GoogleFeedsViewController.swift */; };
+		6EC75B1F1DF493F700DC4D53 /* GoogleFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B1E1DF493F700DC4D53 /* GoogleFeed.swift */; };
+		6EC75B211DF4996D00DC4D53 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B201DF4996D00DC4D53 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EC75B071DF3619B00DC4D53 /* ANSI-Solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ANSI-Solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC75B0A1DF3619B00DC4D53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EC75B0C1DF3619B00DC4D53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EC75B0C1DF3619B00DC4D53 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6EC75B0F1DF3619B00DC4D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EC75B111DF3619B00DC4D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EC75B141DF3619B00DC4D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EC75B161DF3619B00DC4D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC75B1C1DF48D0900DC4D53 /* GoogleFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleFeedsViewController.swift; sourceTree = "<group>"; };
+		6EC75B1E1DF493F700DC4D53 /* GoogleFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleFeed.swift; sourceTree = "<group>"; };
+		6EC75B201DF4996D00DC4D53 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				6EC75B0A1DF3619B00DC4D53 /* AppDelegate.swift */,
-				6EC75B0C1DF3619B00DC4D53 /* ViewController.swift */,
+				6EC75B0C1DF3619B00DC4D53 /* LoginViewController.swift */,
 				6EC75B0E1DF3619B00DC4D53 /* Main.storyboard */,
 				6EC75B111DF3619B00DC4D53 /* Assets.xcassets */,
 				6EC75B131DF3619B00DC4D53 /* LaunchScreen.storyboard */,
 				6EC75B161DF3619B00DC4D53 /* Info.plist */,
+				6EC75B1C1DF48D0900DC4D53 /* GoogleFeedsViewController.swift */,
+				6EC75B1E1DF493F700DC4D53 /* GoogleFeed.swift */,
+				6EC75B201DF4996D00DC4D53 /* TableViewCell.swift */,
 			);
 			path = "ANSI-Solutions";
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					6EC75B061DF3619B00DC4D53 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC75B0D1DF3619B00DC4D53 /* ViewController.swift in Sources */,
+				6EC75B211DF4996D00DC4D53 /* TableViewCell.swift in Sources */,
+				6EC75B1F1DF493F700DC4D53 /* GoogleFeed.swift in Sources */,
+				6EC75B1D1DF48D0900DC4D53 /* GoogleFeedsViewController.swift in Sources */,
+				6EC75B0D1DF3619B00DC4D53 /* LoginViewController.swift in Sources */,
 				6EC75B0B1DF3619B00DC4D53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +312,7 @@
 				6EC75B1B1DF3619B00DC4D53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
